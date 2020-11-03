@@ -20,10 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="777085a3-c06d-46dc-b7c3-fa1e4c140438" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson05/contacts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson05/img/hi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson05/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson05/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson06/contacts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson06/img/1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson06/img/2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson06/img/3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson06/img/Navigation.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson06/img/address-book-solid 1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson06/img/hi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson06/img/illustration.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson06/img/image1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson06/img/image2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson06/img/image3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson06/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson06/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +111,18 @@
       <workItem from="1604150580936" duration="1783000" />
       <workItem from="1604152956209" duration="340000" />
       <workItem from="1604153427872" duration="1783000" />
-      <workItem from="1604155749350" duration="267000" />
+      <workItem from="1604155749350" duration="862000" />
+      <workItem from="1604328158711" duration="1786000" />
+      <workItem from="1604330102658" duration="991000" />
+      <workItem from="1604372297915" duration="1793000" />
+      <workItem from="1604374619885" duration="1120000" />
+      <workItem from="1604376088431" duration="1797000" />
+      <workItem from="1604379189748" duration="391000" />
+      <workItem from="1604403140723" duration="1781000" />
+      <workItem from="1604405019078" duration="1727000" />
+      <workItem from="1604406829686" duration="1284000" />
+      <workItem from="1604408258092" duration="1212000" />
+      <workItem from="1604411449133" duration="639000" />
     </task>
     <servers />
   </component>
