@@ -305,20 +305,46 @@ body {
     opacity: 0.4;
 }
 
+.footer-li {
+    flex-grow: 1;
+    flex-basis: 33.3333%;
+    list-style-type: none;
+    margin-right: 32px;
+    display: flex;
+}
+
+.footer-li:first-child::before {
+    content: 'A. ';
+    display: block;
+    margin-right: 16px;
+}
+
+.footer-li:nth-child(2)::before {
+    content: 'T. ';
+    display: block;
+    margin-right: 16px;
+}
+
+.footer-li:nth-child(3)::before {
+    content: 'E. ';
+    display: block;
+    margin-right: 16px;
+}
+
 
 .li-text {
-    list-style-type: 'A.     ';
-    flex-grow: 1;
+
+
 }
 
 .li-phone {
     list-style-type: 'N.    ';
-    flex-grow: 1;
+
 }
 
 .li-email {
     list-style-type: 'E     ';
-    flex-grow: 1;
+
 
 }
 
