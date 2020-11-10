@@ -20,24 +20,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="777085a3-c06d-46dc-b7c3-fa1e4c140438" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson07/contacts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/img/1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/img/2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/img/3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/img/Navigation.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/img/address-book-solid 1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/img/contacts-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/img/contacts-info.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/img/hi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/img/ic_phone_24px.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/img/illustration.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/img/image1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/img/image2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/img/image3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/lesson06.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson07/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/archive/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/bootstrap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/contacts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/Navigation.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/address-book-solid 1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/card1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/card2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/card3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/contacts-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/contacts-info.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/hi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/ic_phone_24px.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/illustration.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/image1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/image2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/image3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/lake.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/landscape.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/img/sunset.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson08/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson07/lesson07.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +60,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -74,9 +87,8 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lesson04" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lesson08/archive" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -86,17 +98,19 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.prettier.on.save" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Sass/SCSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\novik\OneDrive\Develop\Geekbrains\github\geekbrains\HTML_CSS\lesson01" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\novik\OneDrive\Develop\Geekbrains\github\geekbrains\HTML_CSS\lesson08\archive" />
+      <recent name="C:\Users\novik\OneDrive\Develop\Geekbrains\github\geekbrains\HTML_CSS\lesson08" />
       <recent name="C:\Users\novik\OneDrive\Develop\Geekbrains\github\geekbrains\HTML_CSS\lesson04" />
       <recent name="C:\Users\novik\OneDrive\Develop\Geekbrains\github\geekbrains\HTML_CSS\lesson03" />
       <recent name="C:\Users\novik\OneDrive\Develop\Geekbrains\github\geekbrains\HTML_CSS\lesson02" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\novik\OneDrive\Develop\Geekbrains\github\geekbrains\HTML_CSS\lesson01" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -143,6 +157,13 @@
       <workItem from="1604661006391" duration="1784000" />
       <workItem from="1604662823496" duration="270000" />
       <workItem from="1604670191092" duration="481000" />
+      <workItem from="1604720692901" duration="527000" />
+      <workItem from="1604745972248" duration="112000" />
+      <workItem from="1604979408351" duration="1187000" />
+      <workItem from="1604982247564" duration="1778000" />
+      <workItem from="1604984225736" duration="1103000" />
+      <workItem from="1604986103204" duration="1822000" />
+      <workItem from="1604987957670" duration="1093000" />
     </task>
     <servers />
   </component>
@@ -165,13 +186,21 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="757" y="338" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604988105688">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="757" y="338" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.-125.1920.1160@0.0.1920.1040" timestamp="1604988105688" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1603039733868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1920.-125.1920.1160@0.0.1920.1040" timestamp="1603039733868" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1603039673251">
+    <state x="628" y="297" key="EditFileWatcherDialog" timestamp="1604979604661">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.-125.1920.1160@0.0.1920.1040" timestamp="1603039673251" />
+    <state x="628" y="297" key="EditFileWatcherDialog/0.0.1920.1040/-1920.-125.1920.1160@0.0.1920.1040" timestamp="1604979604661" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1604979656369">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.-125.1920.1160@0.0.1920.1040" timestamp="1604979656369" />
   </component>
 </project>
