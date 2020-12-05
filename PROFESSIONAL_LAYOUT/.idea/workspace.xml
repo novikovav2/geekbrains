@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="420d6358-56ff-4707-8fba-69d2ed981853" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/PROFESSIONAL_LAYOUT.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/account.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/catalog-big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/catalog1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/catalog2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/catalog3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/delivery.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/footer-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/pinterest.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/product1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/product2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/product3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/product4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/product5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/product6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/quality.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/sales.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/img/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HTML_CSS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../HTML_CSS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../HTML_CSS/lesson08/bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/../HTML_CSS/lesson08/bootstrap.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1l87wOc8YXCwiFJBbhOVNbanfLI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="420d6358-56ff-4707-8fba-69d2ed981853" name="Default Changelist" comment="" />
+      <created>1606967101768</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606967101768</updated>
+      <workItem from="1606967103260" duration="1485000" />
+      <workItem from="1607087324314" duration="16383000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

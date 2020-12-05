@@ -20,37 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="777085a3-c06d-46dc-b7c3-fa1e4c140438" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lesson08/archive/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/bootstrap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/contacts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/Navigation.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/address-book-solid 1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/card1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/card2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/card3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/contacts-bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/contacts-info.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/hi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/ic_phone_24px.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/illustration.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/image1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/image2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/image3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/lake.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/landscape.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/img/sunset.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson08/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson07/lesson07.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson08/bootstrap.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson08/bootstrap.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +58,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lesson08/archive" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -97,7 +69,6 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="run.prettier.on.save" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Sass/SCSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -164,6 +135,10 @@
       <workItem from="1604984225736" duration="1103000" />
       <workItem from="1604986103204" duration="1822000" />
       <workItem from="1604987957670" duration="1093000" />
+      <workItem from="1605062945188" duration="1284000" />
+      <workItem from="1606966794448" duration="53000" />
+      <workItem from="1606966904743" duration="83000" />
+      <workItem from="1606967074095" duration="17000" />
     </task>
     <servers />
   </component>
