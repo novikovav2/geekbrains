@@ -2,41 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="420d6358-56ff-4707-8fba-69d2ed981853" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/02/catalog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/account.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/cart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/catalog-big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/catalog1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/catalog2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/catalog3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/delivery.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/filter-detail.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/filter-main.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/footer-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/instagram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/man.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/menu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/photo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/pinterest.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/product1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/product2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/product3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/product4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/product5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/product6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/product7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/product8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/product9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/quality.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/sales.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/img/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/styles/catalog.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/styles/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/styles/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03/img/product-main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03/product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03/styles/product.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +39,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/02" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/03" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -84,6 +52,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\novik\OneDrive\Develop\Geekbrains\github\geekbrains\PROFESSIONAL_LAYOUT\03" />
       <recent name="C:\Users\novik\OneDrive\Develop\Geekbrains\github\geekbrains\PROFESSIONAL_LAYOUT\02" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -110,7 +79,8 @@
       <updated>1606967101768</updated>
       <workItem from="1606967103260" duration="1485000" />
       <workItem from="1607087324314" duration="16383000" />
-      <workItem from="1607262235445" duration="18550000" />
+      <workItem from="1607262235445" duration="19300000" />
+      <workItem from="1607589694833" duration="20577000" />
     </task>
     <servers />
   </component>

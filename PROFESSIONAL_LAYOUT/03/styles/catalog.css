@@ -1,0 +1,147 @@
+.filter {
+    margin-top: 51px;
+    display: flex;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.filter-main {
+    text-transform: uppercase;
+    position: absolute;
+    padding: 13px 16px;
+}
+
+.filter-main-active:hover {
+    width: 360px;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    position: absolute;
+    z-index: 1;
+    padding: 13px 16px;
+}
+
+.filter-main-items {
+    display: none;
+}
+
+.filter-main-active:hover .filter-main-text {
+    color: #EF5B70;
+}
+
+.filter-main-active:hover  path {
+    fill: #EF5B70;
+}
+
+.filter-main-active:hover .filter-main-items {
+    display: block;
+}
+
+.filter-main-item {
+    margin-top: 16px;
+}
+
+.filter-main-item-summary {
+    height: 37px;
+    display: flex;
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.filter-main-item-summary::-webkit-details-marker {
+    display: none
+}
+
+.filter-main-item-summary {
+    list-style: none;
+}
+
+.filter-main-item-summary-rectangle {
+    background: #EF5B70;
+    width: 5px;
+}
+
+.filter-main-item-summary-text {
+    margin-left: 11px;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #EF5B70;
+}
+
+
+.filter-main-ul {
+    list-style-type: none;
+    padding-left: 17px;
+    margin-top: 24px;
+}
+
+.filter-main-li {
+    margin-top: 11px;
+}
+
+.filter-main-a {
+    text-transform: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+
+
+
+.products {
+    margin-top: 67px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.paginator {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.paginator-ul {
+    list-style: none;
+    border: 1px solid #EBEBEB;
+    border-radius: 4px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.paginator-li {
+    display: inline;
+    margin-right: 18px;
+}
+
+
+
+.paginator-li:first-child:before {
+    content: '\f104';
+    font-family: FontAwesome;
+    margin-right: 18px;
+}
+
+.paginator-li:last-child:after {
+    content: '\f105';
+    font-family: FontAwesome;
+    margin-left: 18px;
+}
+
+.paginator-a {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #EBEBEB;
+}
+
+.paginator-a:hover {
+    font-weight: bolder;
+    color: #222222;
+}
+
+.active {
+    color: #EF5B70;
+}
