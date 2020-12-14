@@ -23,8 +23,9 @@
     color: #F16D7F;
 }
 
-.desciption-container {
+.description-container {
     position: relative;
+    margin-bottom: 128px;
 }
 
 .product-description {
