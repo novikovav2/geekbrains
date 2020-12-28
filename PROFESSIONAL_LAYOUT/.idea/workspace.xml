@@ -2,55 +2,180 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="420d6358-56ff-4707-8fba-69d2ed981853" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/04/cart.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/catalog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/account.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/cart-product1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/cart-product2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/cart.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/catalog-big.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/catalog1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/catalog2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/catalog3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/delivery.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/facebook.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/filter-detail.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/filter-main.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/footer-background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/instagram.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/man.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/menu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/photo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/pinterest.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/product-main.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/product1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/product2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/product3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/product4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/product5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/product6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/product7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/product8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/product9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/quality.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/sales.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/img/twitter.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/registration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/styles/_cart.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/styles/_catalog.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/styles/_common.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/styles/_index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/styles/_product.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/styles/_registration.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/styles/_vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/styles/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/account.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/cart-product1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/cart-product2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/catalog-big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/catalog1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/catalog2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/catalog3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/delivery.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/filter-detail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/filter-main.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/footer-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/pinterest.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/product-main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/product1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/product2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/product3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/product4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/product5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/product6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/product7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/product8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/product9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/quality.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/sales.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/img/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/styles/_cart.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/styles/_catalog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/styles/_common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/styles/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/styles/_product.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/styles/_registration.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/styles/_vars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/styles/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/styles/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/styles/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/account.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/cart-product1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/cart-product2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/catalog-big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/catalog1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/catalog2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/catalog3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/delivery.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/filter-detail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/filter-main.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/footer-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/pinterest.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/product-main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/product1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/product2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/product3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/product4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/product5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/product6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/product7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/product8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/product9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/quality.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/sales.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/img/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/_cart.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/_catalog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/_common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/_product.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/_registration.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/_vars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/iphone/_cart.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/iphone/_catalog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/iphone/_common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/iphone/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/iphone/_iphone.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/iphone/_product.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/iphone/_registration.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/tablet_768/_cart.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/tablet_768/_catalog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/tablet_768/_common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/tablet_768/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/tablet_768/_product.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/tablet_768/_registration.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/styles/tablet_768/_tablet_768.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/07.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/catalog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/account.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/cart-product1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/cart-product2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/catalog-big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/catalog1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/catalog2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/catalog3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/delivery.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/facebook.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/filter-detail.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/filter-main.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/footer-background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/instagram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/man.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/pinterest.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/product-main.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/product1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/product2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/product3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/product4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/product5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/product6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/product7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/product8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/product9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/quality.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/sales.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/img/twitter.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/registration.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/_cart.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/_catalog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/_common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/_product.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/_registration.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/_vars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/iphone/_cart.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/iphone/_catalog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/iphone/_common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/iphone/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/iphone/_iphone.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/iphone/_product.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/iphone/_registration.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/tablet_768/_cart.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/tablet_768/_catalog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/tablet_768/_common.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/tablet_768/_index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/tablet_768/_product.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/tablet_768/_registration.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/styles/tablet_768/_tablet_768.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/03/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03/styles/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/03/styles/product.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +209,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/04" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -92,13 +217,13 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\novik\OneDrive\Develop\Geekbrains\github\geekbrains\PROFESSIONAL_LAYOUT\04" />
       <recent name="C:\Users\novik\OneDrive\Develop\Geekbrains\github\geekbrains\PROFESSIONAL_LAYOUT" />
+      <recent name="C:\Users\novik\OneDrive\Develop\Geekbrains\github\geekbrains\PROFESSIONAL_LAYOUT\04" />
       <recent name="C:\Users\novik\OneDrive\Develop\Geekbrains\github\geekbrains\PROFESSIONAL_LAYOUT\03" />
       <recent name="C:\Users\novik\OneDrive\Develop\Geekbrains\github\geekbrains\PROFESSIONAL_LAYOUT\02" />
     </key>
@@ -127,7 +252,11 @@
       <workItem from="1606967103260" duration="1485000" />
       <workItem from="1607087324314" duration="16383000" />
       <workItem from="1607262235445" duration="19300000" />
-      <workItem from="1607589694833" duration="37556000" />
+      <workItem from="1607589694833" duration="37558000" />
+      <workItem from="1608348215440" duration="1160000" />
+      <workItem from="1608524755757" duration="24244000" />
+      <workItem from="1608599035290" duration="2594000" />
+      <workItem from="1608724129520" duration="12586000" />
     </task>
     <servers />
   </component>
@@ -148,5 +277,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
