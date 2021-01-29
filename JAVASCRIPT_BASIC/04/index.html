@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<script>
+		"use strict";
+
+		// Задание 1
+        console.log("------ Task 1 --------")
+
+		function numToObj(number) {
+            let result = { units: 0, tens: 0, hundreds: 0 };
+            if (Number.isInteger(number) && number >= 0 && number <= 999) {
+                result.units = number % 10;
+                result.hundreds = Math.floor(number / 100);
+	            result.tens = Math.floor((number - result.hundreds * 100) / 10);
+	            return result;
+            } else {
+                console.log('Number is wrong');
+                return {};
+            }
+		}
+		console.log(numToObj(1)); // {units: 1, tens: 0, hundreds: 0}
+        console.log(numToObj(12)); // {units: 2, tens: 1, hundreds: 0}
+        console.log(numToObj(123)); // {units: 3, tens: 2, hundreds: 1}
+        console.log(numToObj(1234)); // Number is wrong {}
+        console.log(numToObj(-1)); // Number is wrong {}
+        console.log(numToObj("aaa")); // Number is wrong {}
+
+
+        // Задание 1.1
+        console.log("------ Task 1.1 --------")
+
+		function Product(name, price) {
+            this.name = name;
+            this.price = price;
+		}
+
+		Product.prototype.make25PercentDiscount = function () {
+            this.price = this.price * 0.75;
+		}
+
+		// class Product {
+        //     constructor(name, price) {
+        //         this.name = name;
+        //         this.price = price;
+        //     }
+		//
+        //     make25PercentDiscount() {
+        //         this.price = this.price * 0.75;
+        //     }
+		// }
+
+		let product = new Product('apple', 10);
+        product.make25PercentDiscount();
+        console.log(product);
+
+        // Задание 1.2
+        console.log("------ Task 1.2 --------")
+
+		/*
+		function Post(author, text, date) {
+            this.author = author;
+            this.text = text;
+            this.date = date;
+		}
+
+		Post.prototype.edit = function (text) {
+            this.text = text;
+		}
+
+		function AttachedPost(author, text, date) {
+            Post.call(this, author, text, date)
+			this.highlighted = false;
+		}
+		AttachedPost.prototype = Object.create(Post.prototype);
+		AttachedPost.prototype.constructor = AttachedPost;
+
+		AttachedPost.prototype.makeTextHighlighted = function () {
+            this.highlighted = true;
+		}
+		 */
+
+
+		class Post {
+            constructor(author, text, date) {
+                this.author = author;
+                this.text = text;
+                this.date = date;
+            }
+
+            edit(text) {
+                this.text = text;
+            }
+		}
+
+		class AttachedPost extends Post {
+			constructor(author, text, date) {
+                super(author, text, date);
+                this.highlighted = false;
+            }
+
+            makeTextHighlighted() {
+			    this.highlighted = true;
+            }
+		}
+
+		let post = new Post('Author', 'New post', '25.01.2020');
+        console.log(post);
+        post.edit('Edited post');
+        console.log(post);
+
+        let attachedPost = new AttachedPost('Author', 'New attached post', '25.01.2020');
+        console.log(attachedPost);
+        attachedPost.edit('Edited post');
+        console.log(attachedPost);
+        attachedPost.makeTextHighlighted();
+        console.log(attachedPost);
+
+
+        // Задание 2
+        console.log("------ Task 2 --------")
+
+		const config = {
+            rowsCount: 10,
+            colsCount: 10
+		};
+
+        const player = {
+            x: 0,
+            y: 0,
+
+            move(nextPoint) {
+                this.x = nextPoint.x;
+                this.y = nextPoint.y;
+            }
+        };
+
+        let renderer = {
+			// Сюда запишем все что надо отобразить
+            map: "",
+
+            // Отображает игру в консоли
+	        render() {
+				for (let row=0; row < config.rowsCount; row++ ) {
+					for (let col = 0; col < config.colsCount; col++) {
+						if ( player.y === row && player.x === col ) {
+                            this.map += 'o ';
+						} else {
+                            this.map += 'x ';
+						}
+					}
+					this.map += '\n';
+				}
+				console.log(this.map);
+            },
+
+	        clear() {
+                console.clear();
+                this.map = "";
+	        }
+        };
+
+        let mover = {
+			getDirection() {
+			    const availableDirections = [ 1, 2, 3, 4, 6, 7, 8, 9 ];
+			    while (true) {
+			        let direction = parseInt(prompt("Введите число 2, 4, 6 или 8"));
+			        if (isNaN(direction)) {
+			            return null;
+			        }
+			        if (!availableDirections.includes(direction)) {
+			            alert("Необходимо использовать цифры 2, 4, 6 или 8");
+			            continue;
+			        }
+			        return direction;
+			    }
+			},
+
+			getNextPosition(direction) {
+				const nextPosition = {
+				    x: player.x,
+					y: player.y
+				};
+
+				switch (direction) {
+                    case 1:
+                        nextPosition.x--;
+                        nextPosition.y++;
+                        break;
+				    case 2:
+				        nextPosition.y++;
+				        break;
+					case 3:
+                        nextPosition.x++;
+                        nextPosition.y++;
+                        break;
+					case 4:
+				        nextPosition.x--;
+				        break;
+					case 6:
+					    nextPosition.x++;
+					    break;
+                    case 7:
+                        nextPosition.x--;
+                        nextPosition.y--;
+                        break;
+					case 8:
+					    nextPosition.y--;
+					    break;
+                    case 9:
+                        nextPosition.x++;
+                        nextPosition.y--;
+                        break;
+				}
+				nextPosition.x < 0 ? nextPosition.x = 0 : '' ;
+                nextPosition.y < 0 ? nextPosition.y = 0 : '' ;
+                nextPosition.x === config.colsCount ? nextPosition.x = config.colsCount - 1 : '' ;
+                nextPosition.y === config.rowsCount ? nextPosition.y = config.rowsCount - 1 : '' ;
+				return nextPosition;
+			}
+        };
+
+        let game = {
+            // Запускает игру
+            run() {
+				while (true) {
+				    const direction = mover.getDirection();
+				    if (direction === null) {
+				        console.log("Игра окончена");
+				        return;
+				    }
+				    const nextPoint = mover.getNextPosition(direction);
+				    renderer.clear();
+				    player.move(nextPoint);
+				    renderer.render();
+				}
+            },
+
+	        // Этот метод выполняется при открытии страницы
+	        init() {
+				console.log("Ваше положение на поле в виде о.");
+				renderer.render();
+				console.log("Чтобы начать игру наберите game.run()");
+	        }
+        };
+
+        game.init();
+
+
+        // Задание 3
+        console.log("------ Task 3 --------")
+
+		let questionService = {
+            initQuestions() {
+                this.questions = [];
+                this.questions.push({
+	               question: 'Зимой и летом одним цветом',
+	               answers: [
+	                   'Корова',
+		               'Елка',
+		               'Машина',
+		               'Крокодил'
+	               ],
+	                correctAnswer: 1
+                });
+                this.questions.push({
+                    question: 'Сколько букв в слове Привет',
+                    answers: [
+                        'Четыре',
+                        'Пять',
+                        'Шесть',
+                        'Семь'
+                    ],
+                    correctAnswer: 2
+                });
+                this.questions.push({
+                    question: 'Куда я попал?',
+                    answers: [
+                        'На супер курсы Geekbrains',
+                        'Сюда',
+                        'Туда',
+                        'На деньги'
+                    ],
+                    correctAnswer: 0
+                });
+                this.questions.push({
+                    question: 'Почему?',
+                    answers: [
+                        'Кто здесь?',
+                        'А как иначе?',
+                        'Не знаю',
+                        'Потому'
+                    ],
+                    correctAnswer: 3
+                });
+                this.questions.push({
+                    question: 'Это последний вопрос?',
+                    answers: [
+                        'Ага',
+                        'Нет'
+                    ],
+                    correctAnswer: 0
+                });
+            },
+
+			getAnswer(questionNumber) {
+                while (true) {
+                    const currentQuestion = questionService.questions[questionNumber];
+                    let string = 'Ответьте на вопрос, указав номер варианта ответа: \n';
+                    string += currentQuestion.question + '\n';
+                    for (let i = 0; i < currentQuestion.answers.length; i++) {
+                        string += i + '. ' + currentQuestion.answers[i] + '\n';
+                    }
+                    string += '\n' + 'Для выхода наберите слово Выхухоль';
+                    let userAnswer = parseInt(prompt(string));
+                    if (isNaN(userAnswer)) {
+                        return null;
+                    }
+                    if (!currentQuestion.answers[userAnswer ]) {
+                        alert("Необходимо использовать правильный номер ответа");
+                        continue;
+                    }
+                    return userAnswer;
+                }
+			},
+
+			checkAnswer(questionNumber, userAnswer) {
+                const currentQuestion = questionService.questions[questionNumber];
+				if (userAnswer === currentQuestion.correctAnswer) {
+				    return true;
+				} else {
+				    return false;
+				}
+			}
+		}
+
+
+        let millionGame = {
+            // Запускает игру
+            run() {
+                while (true) {
+                    let result = 0;
+                    for (let question = 0; question < questionService.questions.length; question++) {
+                        const userAnswer = questionService.getAnswer(question);
+                        if (userAnswer === null) {
+                            console.log("Игра окончена");
+                            return;
+                        }
+                        if (questionService.checkAnswer(question, userAnswer)) {
+                            result++;
+                            alert("Это правильный ответ :-) ");
+                        } else {
+                            alert("Это неправильный ответ :-( ");
+                        }
+
+                    }
+                    alert("Вопросы кончились. Количество правильных ответов: " + result);
+                }
+            },
+
+            // Этот метод выполняется при открытии страницы
+            init() {
+                console.log("Давайте сыграем в игру 'Кто хочет стать миллионером'");
+                questionService.initQuestions();
+                console.log("Чтобы начать игру наберите millionGame.run()");
+            }
+        };
+
+        millionGame.init();
+
+
+	</script>
+</body>
+</html>

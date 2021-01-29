@@ -1,0 +1,202 @@
+Windows PowerShell
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Попробуйте новую кроссплатформенную оболочку PowerShell (https://aka.ms/pscore6)
+
+PS C:\Users\novik> ssh avn@192.168.231.128
+Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-58-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+0 обновлений могут быть установлены прямо сейчас.
+0 из этих обновлений, являются обновлениями безопасности.
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+Last login: Fri Jan 15 06:19:34 2021 from 192.168.231.1
+avn@avn-virtual-machine:~$ mkdir hw05
+avn@avn-virtual-machine:~$ cd hw05/
+avn@avn-virtual-machine:~/hw05$ touch file1
+avn@avn-virtual-machine:~/hw05$ echo "File1 homework5 content" > file1
+avn@avn-virtual-machine:~/hw05$ cp file1 file2
+avn@avn-virtual-machine:~/hw05$ ln -s file1 file3
+avn@avn-virtual-machine:~/hw05$ ln file1 file4
+avn@avn-virtual-machine:~/hw05$ ls -li
+итого 12
+661673 -rw-rw-r-- 2 avn avn 24 янв 18 22:03 file1
+661704 -rw-rw-r-- 1 avn avn 24 янв 18 22:03 file2
+661720 lrwxrwxrwx 1 avn avn  5 янв 18 22:05 file3 -> file1
+661673 -rw-rw-r-- 2 avn avn 24 янв 18 22:03 file4
+avn@avn-virtual-machine:~/hw05$ rm file1
+avn@avn-virtual-machine:~/hw05$ ls -li
+итого 8
+661704 -rw-rw-r-- 1 avn avn 24 янв 18 22:03 file2
+661720 lrwxrwxrwx 1 avn avn  5 янв 18 22:05 file3 -> file1
+661673 -rw-rw-r-- 1 avn avn 24 янв 18 22:03 file4
+avn@avn-virtual-machine:~/hw05$ cat file2
+File1 homework5 content
+avn@avn-virtual-machine:~/hw05$ cat file3
+cat: file3: Нет такого файла или каталога
+avn@avn-virtual-machine:~/hw05$ cat file4
+File1 homework5 content
+avn@avn-virtual-machine:~/hw05$ mv file2 file2-2
+avn@avn-virtual-machine:~/hw05$ mv file3 file3-2
+avn@avn-virtual-machine:~/hw05$ mv file4 file4-2
+avn@avn-virtual-machine:~/hw05$ ls -li
+итого 8
+661704 -rw-rw-r-- 1 avn avn 24 янв 18 22:03 file2-2
+661720 lrwxrwxrwx 1 avn avn  5 янв 18 22:05 file3-2 -> file1
+661673 -rw-rw-r-- 1 avn avn 24 янв 18 22:03 file4-2
+avn@avn-virtual-machine:~/hw05$ ln -s file2 file5
+avn@avn-virtual-machine:~/hw05$ ls -li
+итого 8
+661704 -rw-rw-r-- 1 avn avn 24 янв 18 22:03 file2-2
+661720 lrwxrwxrwx 1 avn avn  5 янв 18 22:05 file3-2 -> file1
+661673 -rw-rw-r-- 1 avn avn 24 янв 18 22:03 file4-2
+661635 lrwxrwxrwx 1 avn avn  5 янв 18 22:12 file5 -> file2
+avn@avn-virtual-machine:~/hw05$ mkdir dir
+avn@avn-virtual-machine:~/hw05$ mv file3-2 ./dir/
+avn@avn-virtual-machine:~/hw05$ mv file4-2 ./dir/
+avn@avn-virtual-machine:~/hw05$ mv file5 ./dir/
+avn@avn-virtual-machine:~/hw05$ ls -li ./dir/
+итого 4
+661720 lrwxrwxrwx 1 avn avn  5 янв 18 22:05 file3-2 -> file1
+661673 -rw-rw-r-- 1 avn avn 24 янв 18 22:03 file4-2
+661635 lrwxrwxrwx 1 avn avn  5 янв 18 22:12 file5 -> file2
+avn@avn-virtual-machine:~/hw05$ cat ./dir/file5
+cat: ./dir/file5: Нет такого файла или каталога
+avn@avn-virtual-machine:~/hw05$ touch task3-1
+avn@avn-virtual-machine:~/hw05$ touch task3-2
+avn@avn-virtual-machine:~/hw05$ ll | grep task3
+-rw-rw-r--  1 avn avn    0 янв 18 22:14 task3-1
+-rw-rw-r--  1 avn avn    0 янв 18 22:14 task3-2
+avn@avn-virtual-machine:~/hw05$ chmod 664 task3-1
+avn@avn-virtual-machine:~/hw05$ chmod 600 task3-2
+avn@avn-virtual-machine:~/hw05$ ll | grep task3
+-rw-rw-r--  1 avn avn    0 янв 18 22:14 task3-1
+-rw-------  1 avn avn    0 янв 18 22:14 task3-2
+avn@avn-virtual-machine:~/hw05$ chmod 000 task3-1
+avn@avn-virtual-machine:~/hw05$ chmod 000 task3-2
+avn@avn-virtual-machine:~/hw05$ ll | grep task3
+----------  1 avn avn    0 янв 18 22:14 task3-1
+----------  1 avn avn    0 янв 18 22:14 task3-2
+avn@avn-virtual-machine:~/hw05$ chmod ug=rw task3-1
+avn@avn-virtual-machine:~/hw05$ chmod o+r task3-1
+avn@avn-virtual-machine:~/hw05$ ll | grep task3
+-rw-rw-r--  1 avn avn    0 янв 18 22:14 task3-1
+----------  1 avn avn    0 янв 18 22:14 task3-2
+avn@avn-virtual-machine:~/hw05$ chmod u+rw task3-2
+avn@avn-virtual-machine:~/hw05$ ll | grep task3
+-rw-rw-r--  1 avn avn    0 янв 18 22:14 task3-1
+-rw-------  1 avn avn    0 янв 18 22:14 task3-2
+avn@avn-virtual-machine:~/hw05$ sudo groupadd developer
+[sudo] пароль для avn:
+avn@avn-virtual-machine:~/hw05$ sudo useradd developer1
+avn@avn-virtual-machine:~/hw05$ sudo useradd developer2
+avn@avn-virtual-machine:~/hw05$ sudo usermod -aG developer developer1
+avn@avn-virtual-machine:~/hw05$ sudo usermod -aG developer developer2
+avn@avn-virtual-machine:~/hw05$ mkdir developers-workdir
+avn@avn-virtual-machine:~/hw05$ sudo chown developer1:developer -R ./developers-workdir/
+avn@avn-virtual-machine:~/hw05$ ll | grep developers-workdir/
+drwxrwxr-x  2 developer1 developer 4096 янв 18 22:23 developers-workdir/
+avn@avn-virtual-machine:~/hw05$ sudo passwd developer1
+Новый пароль :
+Повторите ввод нового пароля :
+passwd: пароль успешно обновлён
+avn@avn-virtual-machine:~/hw05$ sudo passwd developer2
+Новый пароль :
+Повторите ввод нового пароля :
+passwd: пароль успешно обновлён
+avn@avn-virtual-machine:~/hw05$ su - developer1
+Пароль:
+su: предупреждение: не могу поменять каталог на /home/developer1: Нет такого файла или каталога
+$ pwd
+/home/avn/hw05
+$ cd ./developers-workdir
+$ pwd
+/home/avn/hw05/developers-workdir
+$ echo "developer1
+> ^C
+$ echo "developer1" > file
+$ exit
+avn@avn-virtual-machine:~/hw05$ cd ./developers-workdir/
+avn@avn-virtual-machine:~/hw05/developers-workdir$ su - developer1
+Пароль:
+su: предупреждение: не могу поменять каталог на /home/developer1: Нет такого файла или каталога
+$ echo "developer1" > file
+$ exit
+avn@avn-virtual-machine:~/hw05/developers-workdir$ ll
+итого 12
+drwxrwxr-x 2 developer1 developer  4096 янв 18 22:29 ./
+drwxrwxr-x 4 avn        avn        4096 янв 18 22:23 ../
+-rw-rw-r-- 1 developer1 developer1   11 янв 18 22:29 file
+avn@avn-virtual-machine:~/hw05/developers-workdir$ sudo chown :developer ./file
+avn@avn-virtual-machine:~/hw05/developers-workdir$ ll
+итого 12
+drwxrwxr-x 2 developer1 developer 4096 янв 18 22:29 ./
+drwxrwxr-x 4 avn        avn       4096 янв 18 22:23 ../
+-rw-rw-r-- 1 developer1 developer   11 янв 18 22:29 file
+avn@avn-virtual-machine:~/hw05/developers-workdir$ su - developer2
+Пароль:
+su: предупреждение: не могу поменять каталог на /home/developer2: Нет такого файла или каталога
+$ pwd
+/home/avn/hw05/developers-workdir
+$ echo "developer2" > file
+$ exit
+avn@avn-virtual-machine:~/hw05/developers-workdir$ cat ./file
+developer2
+avn@avn-virtual-machine:~/hw05/developers-workdir$ echo "my user" > file
+-bash: file: Отказано в доступе
+avn@avn-virtual-machine:~/hw05/developers-workdir$ sudo mkdir share
+avn@avn-virtual-machine:~/hw05/developers-workdir$ ll
+итого 16
+drwxrwxr-x 3 developer1 developer 4096 янв 18 22:31 ./
+drwxrwxr-x 4 avn        avn       4096 янв 18 22:23 ../
+-rw-rw-r-- 1 developer1 developer   11 янв 18 22:30 file
+drwxr-xr-x 2 root       root      4096 янв 18 22:31 share/
+avn@avn-virtual-machine:~/hw05/developers-workdir$ sudo chown :developer -R share
+avn@avn-virtual-machine:~/hw05/developers-workdir$ ll
+итого 16
+drwxrwxr-x 3 developer1 developer 4096 янв 18 22:31 ./
+drwxrwxr-x 4 avn        avn       4096 янв 18 22:23 ../
+-rw-rw-r-- 1 developer1 developer   11 янв 18 22:30 file
+drwxr-xr-x 2 root       developer 4096 янв 18 22:31 share/
+avn@avn-virtual-machine:~/hw05/developers-workdir$ sudo chmod 1777 share
+avn@avn-virtual-machine:~/hw05/developers-workdir$ ll
+итого 16
+drwxrwxr-x 3 developer1 developer 4096 янв 18 22:31 ./
+drwxrwxr-x 4 avn        avn       4096 янв 18 22:23 ../
+-rw-rw-r-- 1 developer1 developer   11 янв 18 22:30 file
+drwxrwxrwt 2 root       developer 4096 янв 18 22:31 share/
+avn@avn-virtual-machine:~/hw05/developers-workdir$ su - developer1
+Пароль:
+su: предупреждение: не могу поменять каталог на /home/developer1: Нет такого файла или каталога
+$ touch ./share/file
+$ exit
+avn@avn-virtual-machine:~/hw05/developers-workdir$ su - developer2
+Пароль:
+su: предупреждение: не могу поменять каталог на /home/developer2: Нет такого файла или каталога
+$ rm ./share/file
+rm: удалить защищенный от записи пустой обычный файл './share/file'?
+$ exit
+avn@avn-virtual-machine:~/hw05/developers-workdir$ ll ./share
+итого 8
+drwxrwxrwt 2 root       developer  4096 янв 18 22:37 ./
+drwxrwxr-x 3 developer1 developer  4096 янв 18 22:31 ../
+-rw-rw-r-- 1 developer1 developer1    0 янв 18 22:37 file
+avn@avn-virtual-machine:~/hw05/developers-workdir$ cd ..
+avn@avn-virtual-machine:~/hw05$
+avn@avn-virtual-machine:~/hw05$
+avn@avn-virtual-machine:~/hw05$ mkdir hidden
+avn@avn-virtual-machine:~/hw05$ cd ./hidden/
+avn@avn-virtual-machine:~/hw05/hidden$ echo "hidden text" > .file1
+avn@avn-virtual-machine:~/hw05/hidden$ echo "hidden text" > .file2
+avn@avn-virtual-machine:~/hw05/hidden$ echo "hidden text" > .file3
+avn@avn-virtual-machine:~/hw05/hidden$ ls
+avn@avn-virtual-machine:~/hw05/hidden$ cat ./.file1
+hidden text
+avn@avn-virtual-machine:~/hw05/hidden$

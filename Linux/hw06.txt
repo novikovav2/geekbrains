@@ -1,0 +1,255 @@
+Windows PowerShell
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Попробуйте новую кроссплатформенную оболочку PowerShell (https://aka.ms/pscore6)
+
+PS C:\Users\novik> ssh avn@192.168.231.128
+Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-58-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+0 обновлений могут быть установлены прямо сейчас.
+
+0 из этих обновлений, являются обновлениями безопасности.
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+Last login: Mon Jan 18 22:01:53 2021 from 192.168.231.1
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ mkdir hw06
+avn@avn-virtual-machine:~$ cd hw06
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$ echo "TAKS 1"
+TAKS 1
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$ mkdir task1
+avn@avn-virtual-machine:~/hw06$ cd task1/
+avn@avn-virtual-machine:~/hw06/task1$ touch example.file
+avn@avn-virtual-machine:~/hw06/task1$ touch script.sh
+avn@avn-virtual-machine:~/hw06/task1$ vi example.file
+avn@avn-virtual-machine:~/hw06/task1$ cat example.file
+This is file.
+There are empty line in file. For example:
+
+
+Also file consists lower symbols.
+My task is remove empty lines and transform lower symbols to upper.
+
+avn@avn-virtual-machine:~/hw06/task1$ vi script.sh
+avn@avn-virtual-machine:~/hw06/task1$ cat script.sh
+#!/bin/bash
+
+cat example.file | sed '/^$/d' | tr [:lower:] [:upper:] > example.file
+
+avn@avn-virtual-machine:~/hw06/task1$ chmod u+x ./script.sh
+avn@avn-virtual-machine:~/hw06/task1$ ./script.sh
+avn@avn-virtual-machine:~/hw06/task1$ cat example.file
+THIS IS FILE.
+THERE ARE EMPTY LINE IN FILE. FOR EXAMPLE:
+ALSO FILE CONSISTS LOWER SYMBOLS.
+MY TASK IS REMOVE EMPTY LINES AND TRANSFORM LOWER SYMBOLS TO UPPER.
+avn@avn-virtual-machine:~/hw06/task1$
+avn@avn-virtual-machine:~/hw06/task1$
+avn@avn-virtual-machine:~/hw06/task1$ cd ..
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$ echo 'TASK 2'
+TASK 2
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$ mkdir task2
+avn@avn-virtual-machine:~/hw06$ cd task2
+avn@avn-virtual-machine:~/hw06/task2$ touch script.sh
+avn@avn-virtual-machine:~/hw06/task2$ vi script.sh
+avn@avn-virtual-machine:~/hw06/task2$ cat script.sh
+#!/bin/bash
+
+for y in 2010 2011 2012 2013 2014 2015 2016 2017
+do
+  mkdir $y
+  cd $y
+  for m in 1 2 3 4 5 6 7 8 9 10 11 12
+  do
+    mkdir $m
+    cd $m
+    for f in 1 2 3
+    do
+     echo "$m-$y" > "file_$f"
+    done
+    cd ..
+  done
+  cd ..
+done
+avn@avn-virtual-machine:~/hw06/task2$ chmod u+x script.sh
+avn@avn-virtual-machine:~/hw06/task2$ ./script.sh
+avn@avn-virtual-machine:~/hw06/task2$ ls
+2010  2011  2012  2013  2014  2015  2016  2017  script.sh
+avn@avn-virtual-machine:~/hw06/task2$ cd 2010
+avn@avn-virtual-machine:~/hw06/task2/2010$ ls
+1  10  11  12  2  3  4  5  6  7  8  9
+avn@avn-virtual-machine:~/hw06/task2/2010$ cd 10
+avn@avn-virtual-machine:~/hw06/task2/2010/10$ ls
+file_1  file_2  file_3
+avn@avn-virtual-machine:~/hw06/task2/2010/10$ cat file_3
+10-2010
+avn@avn-virtual-machine:~/hw06/task2/2010/10$ cd ../../..
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$ echo "TASK 3"
+TASK 3
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$ ll /etc | awk '{ print $1 }' | sort | uniq
+drwxr-s---
+drwxr-xr-x
+lrwxrwxrwx
+-r--r-----
+-r--r--r--
+-rw-------
+-rw-r-----
+-rw-r--r--
+-rw-rw-r--
+итого
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$ echo " TASK 4 "
+ TASK 4
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$ cat /var/log/syslog | grep error
+Jan 22 08:29:34 avn-virtual-machine systemd-resolved[684]: Server returned error NXDOMAIN, mitigating potential DNS violation DVE-2018-0001, retrying transaction with reduced feature level UDP.
+Jan 22 08:29:34 avn-virtual-machine /usr/lib/gdm3/gdm-x-session[1010]: #011(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+Jan 22 08:29:36 avn-virtual-machine systemd-resolved[684]: Server returned error NXDOMAIN, mitigating potential DNS violation DVE-2018-0001, retrying transaction with reduced feature level UDP.
+Jan 22 09:13:05 avn-virtual-machine systemd-resolved[684]: message repeated 2 times: [ Server returned error NXDOMAIN, mitigating potential DNS violation DVE-2018-0001, retrying transaction with reduced feature level UDP.]
+Jan 22 09:18:05 avn-virtual-machine systemd-resolved[684]: Server returned error NXDOMAIN, mitigating potential DNS violation DVE-2018-0001, retrying transaction with reduced feature level UDP.
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$ echo " TASK 5 "
+ TASK 5
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$ sudo apt install at
+[sudo] пароль для avn:
+Чтение списков пакетов… Готово
+Построение дерева зависимостей
+Чтение информации о состоянии… Готово
+Следующий пакет устанавливался автоматически и больше не требуется:
+  libfprint-2-tod1
+Для его удаления используйте «sudo apt autoremove».
+Будут установлены следующие дополнительные пакеты:
+  libfl2
+Предлагаемые пакеты:
+  default-mta | mail-transport-agent
+Следующие НОВЫЕ пакеты будут установлены:
+  at libfl2
+Обновлено 0 пакетов, установлено 2 новых пакетов, для удаления отмечено 0 пакетов, и 0 пакетов не обновлено.
+Необходимо скачать 50,1 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 241 kB.
+Хотите продолжить? [Д/н] y
+Пол:1 http://ru.archive.ubuntu.com/ubuntu focal/main amd64 libfl2 amd64 2.6.4-6.2 [11,5 kB]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu focal/main amd64 at amd64 3.1.23-1ubuntu1 [38,7 kB]
+Получено 50,1 kB за 0с (164 kB/s)
+Выбор ранее не выбранного пакета libfl2:amd64.
+(Чтение базы данных … на данный момент установлено 187910 файлов и каталогов.)
+Подготовка к распаковке …/libfl2_2.6.4-6.2_amd64.deb …
+Распаковывается libfl2:amd64 (2.6.4-6.2) …
+Выбор ранее не выбранного пакета at.
+Подготовка к распаковке …/at_3.1.23-1ubuntu1_amd64.deb …
+Распаковывается at (3.1.23-1ubuntu1) …
+Настраивается пакет libfl2:amd64 (2.6.4-6.2) …
+Настраивается пакет at (3.1.23-1ubuntu1) …
+Created symlink /etc/systemd/system/multi-user.target.wants/atd.service → /lib/systemd/system/atd.service.
+Обрабатываются триггеры для systemd (245.4-4ubuntu3.3) …
+Обрабатываются триггеры для man-db (2.9.1-1) …
+Обрабатываются триггеры для libc-bin (2.31-0ubuntu9.1) …
+# Edit this file to introduce tasks to be run by cron.
+
+
+avn@avn-virtual-machine:~/hw06$ at 09:00 <<END
+> shutdown -r now
+> END
+warning: commands will be executed using /bin/sh
+job 1 at Sat Jan 23 09:00:00 2021
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$ echo " TASK 6 "
+ TASK 6
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$
+avn@avn-virtual-machine:~/hw06$ mkdir task6
+avn@avn-virtual-machine:~/hw06$ cd task6
+avn@avn-virtual-machine:~/hw06/task6$ touch script.sh
+avn@avn-virtual-machine:~/hw06/task6$ chmod a+x script.sh
+avn@avn-virtual-machine:~/hw06/task6$ vi script.sh
+avn@avn-virtual-machine:~/hw06/task6$ cat script.sh
+#!/bin/bash
+
+tar -czvf /tmp/archive.gz /etc
+
+avn@avn-virtual-machine:~/hw06/task6$ sudo crontab -e
+no crontab for root - using an empty one
+
+Select an editor.  To change later, run 'select-editor'.
+  1. /bin/nano        <---- easiest
+  2. /usr/bin/mcedit
+  3. /usr/bin/vim.tiny
+  4. /bin/ed
+
+Choose 1-4 [1]: 3
+crontab: installing new crontab
+avn@avn-virtual-machine:~/hw06/task6$ sudo crontab -l
+# Edit this file to introduce tasks to be run by cron.
+#
+# Each task to run has to be defined through a single line
+# indicating with different fields when the task will be run
+# and what command to run for the task
+#
+# To define the time you can provide concrete values for
+# minute (m), hour (h), day of month (dom), month (mon),
+# and day of week (dow) or use '*' in these fields (for 'any').
+#
+# Notice that tasks will be started based on the cron's system
+# daemon's notion of time and timezones.
+#
+# Output of the crontab jobs (including errors) is sent through
+# email to the user the crontab file belongs to (unless redirected).
+#
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+#
+# For more information see the manual pages of crontab(5) and cron(8)
+#
+# m h  dom mon dow   command
+
+00 5 * * * /home/avn/hw06/task6/script.sh
+avn@avn-virtual-machine:~/hw06/task6$

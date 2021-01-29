@@ -1,0 +1,172 @@
+PS C:\Users\novik> ssh avn@192.168.231.128
+Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.4.0-58-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+0 обновлений могут быть установлены прямо сейчас.
+0 из этих обновлений, являются обновлениями безопасности.
+
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+Last login: Fri Jan 22 08:31:56 2021 from 192.168.231.1
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ echo 'TASK 1'
+TASK 1
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ echo "deb http://nginx.org/packages/mainline/ubuntu `lsb_release -cs` nginx" \
+>     | sudo tee /etc/apt/sources.list.d/nginx.list
+deb http://nginx.org/packages/mainline/ubuntu focal nginx
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ curl -fsSL https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
+OK
+avn@avn-virtual-machine:~$ sudo apt-key fingerprint ABF5BD827BD9BF62
+pub   rsa2048 2011-08-19 [SC] [годен до: 2024-06-14]
+      573B FD6B 3D8F BC64 1079  A6AB ABF5 BD82 7BD9 BF62
+uid         [ неизвестно ] nginx signing key <signing-key@nginx.com>
+
+avn@avn-virtual-machine:~$ sudo apt update
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu focal InRelease
+Пол:2 http://ru.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
+Пол:4 http://ru.archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [408 kB]
+Пол:5 http://security.ubuntu.com/ubuntu focal-security InRelease [109 kB]
+Пол:6 http://ru.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [768 kB]
+Пол:7 http://ru.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [188 kB]
+Пол:8 http://ru.archive.ubuntu.com/ubuntu focal-updates/main amd64 DEP-11 Metadata [264 kB]
+Пол:9 http://ru.archive.ubuntu.com/ubuntu focal-updates/main DEP-11 48x48 Icons [55,6 kB]
+Пол:10 http://ru.archive.ubuntu.com/ubuntu focal-updates/main DEP-11 64x64 Icons [87,9 kB]
+Пол:11 http://nginx.org/packages/mainline/ubuntu focal InRelease [2 852 B]
+Пол:12 http://ru.archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [11,6 kB]
+Пол:13 http://ru.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [137 kB]
+Пол:14 http://ru.archive.ubuntu.com/ubuntu focal-updates/restricted i386 Packages [16,2 kB]
+Пол:15 http://ru.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [20,3 kB]
+Пол:16 http://ru.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 c-n-f Metadata [436 B]
+Пол:17 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [727 kB]
+Пол:18 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [538 kB]
+Пол:19 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [148 kB]
+Пол:20 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [299 kB]
+Пол:21 http://nginx.org/packages/mainline/ubuntu focal/nginx amd64 Packages [17,6 kB]
+Пол:46 http://security.ubuntu.com/ubuntu focal-security/universe amd64 DEP-11 Metadata [56,5 kB]
+Пол:47 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [9 568 B]
+Пол:48 http://security.ubuntu.com/ubuntu focal-security/multiverse i386 Packages [2 336 B]
+Пол:49 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [10,4 kB]
+Пол:50 http://security.ubuntu.com/ubuntu focal-security/multiverse Translation-en [2 876 B]
+Пол:51 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 c-n-f Metadata [284 B]
+Получено 6 615 kB за 1с (5 597 kB/s)
+Чтение списков пакетов… Готово
+Построение дерева зависимостей
+Чтение информации о состоянии… Готово
+Может быть обновлено 75 пакетов. Запустите «apt list --upgradable» для их показа.
+N: Пропускается получение настроенного файла «nginx/binary-i386/Packages», так как репозиторий «http://nginx.org/packages/mainline/ubuntu focal InRelease» не поддерживает архитектуру «i386»
+avn@avn-virtual-machine:~$ sudo apt install nginx
+Чтение списков пакетов… Готово
+Построение дерева зависимостей
+Чтение информации о состоянии… Готово
+Следующий пакет устанавливался автоматически и больше не требуется:
+  libfprint-2-tod1
+Для его удаления используйте «sudo apt autoremove».
+Следующие НОВЫЕ пакеты будут установлены:
+  nginx
+Обновлено 0 пакетов, установлено 1 новых пакетов, для удаления отмечено 0 пакетов, и 75 пакетов не обновлено.
+Необходимо скачать 874 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 3 112 kB.
+Пол:1 http://nginx.org/packages/mainline/ubuntu focal/nginx amd64 nginx amd64 1.19.6-1~focal [874 kB]
+Получено 874 kB за 1с (1 747 kB/s)
+Выбор ранее не выбранного пакета nginx.
+(Чтение базы данных … на данный момент установлено 187950 файлов и каталогов.)
+Подготовка к распаковке …/nginx_1.19.6-1~focal_amd64.deb …
+----------------------------------------------------------------------
+
+Thanks for using nginx!
+
+Please find the official documentation for nginx here:
+* http://nginx.org/en/docs/
+
+Please subscribe to nginx-announce mailing list to get
+the most important news about nginx:
+* http://nginx.org/en/support.html
+
+Commercial subscriptions for nginx are available on:
+* http://nginx.com/products/
+
+----------------------------------------------------------------------
+Распаковывается nginx (1.19.6-1~focal) …
+Настраивается пакет nginx (1.19.6-1~focal) …
+Created symlink /etc/systemd/system/multi-user.target.wants/nginx.service → /lib/systemd/system/nginx.service.
+Обрабатываются триггеры для man-db (2.9.1-1) …
+Обрабатываются триггеры для systemd (245.4-4ubuntu3.3) …
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ dpkg --list | grep nginx
+ii  nginx                                      1.19.6-1~focal                      amd64        high performance web server
+avn@avn-virtual-machine:~$ dpkg --remove nginx
+dpkg: ошибка: запрошенная операция требует привилегий суперпользователя
+avn@avn-virtual-machine:~$ sudo dpkg --remove nginx
+(Чтение базы данных … на данный момент установлено 187987 файлов и каталогов.)
+Удаляется nginx (1.19.6-1~focal) …
+Обрабатываются триггеры для man-db (2.9.1-1) …
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ echo 'TASK 2'
+TASK 2
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ sudo snap install google-cloud-sdk --classic
+google-cloud-sdk 324.0.0 от Cloud SDK (google-cloud-sdk✓) установлен
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ echo 'TASK 3'
+TASK 3
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+avn@avn-virtual-machine:~$ sudo iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 80 -j ACCEPT
+avn@avn-virtual-machine:~$ sudo iptables -A INPUT -m state --state NEW -m tcp -p tcp --dport 22 -j ACCEPT
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ sudo iptables --list
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination
+ACCEPT     tcp  --  anywhere             anywhere             state NEW tcp dpt:http
+ACCEPT     tcp  --  anywhere             anywhere             state NEW tcp dpt:ssh
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination
+avn@avn-virtual-machine:~$ sudo iptables -P INPUT DROP
+avn@avn-virtual-machine:~$ sudo iptables -P OUTPUT ACCEPT
+avn@avn-virtual-machine:~$ sudo iptables-save
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ sudo iptables --list
+Chain INPUT (policy DROP)
+target     prot opt source               destination
+ACCEPT     all  --  anywhere             anywhere             state RELATED,ESTABLISHED
+ACCEPT     tcp  --  anywhere             anywhere             state NEW tcp dpt:ssh
+ACCEPT     tcp  --  anywhere             anywhere             state NEW tcp dpt:http
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ echo 'TASK 4'
+TASK 4
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080
+\
+avn@avn-virtual-machine:~$

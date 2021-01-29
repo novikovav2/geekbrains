@@ -1,0 +1,429 @@
+Windows PowerShell
+(C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+Попробуйте новую кроссплатформенную оболочку PowerShell (https://aka.ms/pscore6)
+
+PS C:\Users\novik> ssh avn@192.168.231.128
+Welcome to Ubuntu 20.04.1 LTS (GNU/Linux 5.8.0-38-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+
+53 обновления могут быть установлены прямо сейчас.
+0 из этих обновлений, являются обновлениями безопасности.
+Чтобы просмотреть дополнительные обновления выполните: apt list --upgradable
+
+Your Hardware Enablement Stack (HWE) is supported until April 2025.
+Last login: Sat Jan 23 20:31:39 2021 from 192.168.231.1
+avn@avn-virtual-machine:~$ sudo apt-get install \
+>     apt-transport-https \
+>     ca-certificates \
+>     curl \
+>     gnupg-agent \
+>     software-properties-common
+Чтение списков пакетов… Готово
+Построение дерева зависимостей
+Чтение информации о состоянии… Готово
+Уже установлен пакет ca-certificates самой новой версии (20201027ubuntu0.20.04.1).
+ca-certificates помечен как установленный вручную.
+Уже установлен пакет curl самой новой версии (7.68.0-1ubuntu2.4).
+Уже установлен пакет software-properties-common самой новой версии (0.98.9.3).
+software-properties-common помечен как установленный вручную.
+Следующие пакеты устанавливались автоматически и больше не требуются:
+  libfprint-2-tod1 linux-headers-5.4.0-42 linux-headers-5.4.0-42-generic linux-image-5.4.0-42-generic linux-modules-5.4.0-42-generic linux-modules-extra-5.4.0-42-generic
+Для их удаления используйте «sudo apt autoremove».
+Следующие НОВЫЕ пакеты будут установлены:
+  apt-transport-https gnupg-agent
+Обновлено 0 пакетов, установлено 2 новых пакетов, для удаления отмечено 0 пакетов, и 52 пакетов не обновлено.
+Необходимо скачать 6 940 B архивов.
+После данной операции объём занятого дискового пространства возрастёт на 207 kB.
+Хотите продолжить? [Д/н] y
+Пол:1 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe amd64 apt-transport-https all 2.0.4 [1 704 B]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu focal/universe amd64 gnupg-agent all 2.2.19-3ubuntu2 [5 236 B]
+Получено 6 940 B за 1с (13,8 kB/s)
+Выбор ранее не выбранного пакета apt-transport-https.
+(Чтение базы данных … на данный момент установлено 225592 файла и каталога.)
+Подготовка к распаковке …/apt-transport-https_2.0.4_all.deb …
+Распаковывается apt-transport-https (2.0.4) …
+Выбор ранее не выбранного пакета gnupg-agent.
+Подготовка к распаковке …/gnupg-agent_2.2.19-3ubuntu2_all.deb …
+Распаковывается gnupg-agent (2.2.19-3ubuntu2) …
+Настраивается пакет apt-transport-https (2.0.4) …
+Настраивается пакет gnupg-agent (2.2.19-3ubuntu2) …
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+OK
+avn@avn-virtual-machine:~$ sudo apt-key fingerprint 0EBFCD88
+pub   rsa4096 2017-02-22 [SCEA]
+      9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88
+uid         [ неизвестно ] Docker Release (CE deb) <docker@docker.com>
+sub   rsa4096 2017-02-22 [S]
+
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ sudo add-apt-repository \
+>    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+>    $(lsb_release -cs) \
+>    stable"
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu focal InRelease
+Пол:2 http://ru.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu focal-backports InRelease [101 kB]
+Пол:4 https://download.docker.com/linux/ubuntu focal InRelease [36,2 kB]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [786 kB]
+Пол:6 https://download.docker.com/linux/ubuntu focal/stable amd64 Packages [6 247 B]
+Пол:7 http://security.ubuntu.com/ubuntu focal-security InRelease [109 kB]
+Пол:8 http://ru.archive.ubuntu.com/ubuntu focal-updates/main i386 Packages [413 kB]
+Сущ:9 http://nginx.org/packages/mainline/ubuntu focal InRelease
+Пол:10 http://ru.archive.ubuntu.com/ubuntu focal-updates/main Translation-en [190 kB]
+Пол:11 http://ru.archive.ubuntu.com/ubuntu focal-updates/main amd64 DEP-11 Metadata [264 kB]
+Пол:12 http://ru.archive.ubuntu.com/ubuntu focal-updates/main amd64 c-n-f Metadata [11,7 kB]
+Пол:13 http://ru.archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [140 kB]
+Пол:14 http://ru.archive.ubuntu.com/ubuntu focal-updates/restricted Translation-en [21,0 kB]
+Пол:15 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe i386 Packages [545 kB]
+Пол:16 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [735 kB]
+Пол:17 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe Translation-en [149 kB]
+Пол:18 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe amd64 DEP-11 Metadata [301 kB]
+Пол:19 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe DEP-11 64x64 Icons [348 kB]
+Пол:20 http://ru.archive.ubuntu.com/ubuntu focal-updates/universe amd64 c-n-f Metadata [15,5 kB]
+Пол:21 http://ru.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [16,9 kB]
+Пол:22 http://ru.archive.ubuntu.com/ubuntu focal-updates/multiverse Translation-en [4 992 B]
+Пол:23 http://ru.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 DEP-11 Metadata [2 468 B]
+Пол:24 http://ru.archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 c-n-f Metadata [536 B]
+Пол:25 http://ru.archive.ubuntu.com/ubuntu focal-backports/universe amd64 DEP-11 Metadata [1 768 B]
+Пол:26 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [455 kB]
+Пол:27 http://security.ubuntu.com/ubuntu focal-security/main i386 Packages [178 kB]
+Пол:28 http://security.ubuntu.com/ubuntu focal-security/main Translation-en [101 kB]
+Пол:29 http://security.ubuntu.com/ubuntu focal-security/main amd64 DEP-11 Metadata [24,3 kB]
+Пол:30 http://security.ubuntu.com/ubuntu focal-security/main amd64 c-n-f Metadata [5 904 B]
+Пол:31 http://security.ubuntu.com/ubuntu focal-security/universe i386 Packages [417 kB]
+Пол:32 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [527 kB]
+Пол:33 http://security.ubuntu.com/ubuntu focal-security/universe Translation-en [71,9 kB]
+Пол:34 http://security.ubuntu.com/ubuntu focal-security/universe amd64 DEP-11 Metadata [56,5 kB]
+Пол:35 http://security.ubuntu.com/ubuntu focal-security/universe amd64 c-n-f Metadata [9 600 B]
+Получено 6 159 kB за 5с (1 205 kB/s)
+Чтение списков пакетов… Готово
+N: Пропускается получение настроенного файла «nginx/binary-i386/Packages», так как репозиторий «http://nginx.org/packages/mainline/ubuntu focal InRelease» не поддерживает архитектуру «i386»
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ sudo apt-get update
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu focal InRelease
+Сущ:2 http://ru.archive.ubuntu.com/ubuntu focal-updates InRelease
+Сущ:3 http://ru.archive.ubuntu.com/ubuntu focal-backports InRelease
+Сущ:4 http://nginx.org/packages/mainline/ubuntu focal InRelease
+Сущ:5 http://security.ubuntu.com/ubuntu focal-security InRelease
+Сущ:6 https://download.docker.com/linux/ubuntu focal InRelease
+Чтение списков пакетов… Готово
+N: Пропускается получение настроенного файла «nginx/binary-i386/Packages», так как репозиторий «http://nginx.org/packages/mainline/ubuntu focal InRelease» не поддерживает архитектуру «i386»
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ sudo apt-get install docker-ce docker-ce-cli containerd.io
+Чтение списков пакетов… Готово
+Построение дерева зависимостей
+Чтение информации о состоянии… Готово
+Следующие пакеты устанавливались автоматически и больше не требуются:
+  libfprint-2-tod1 linux-headers-5.4.0-42 linux-headers-5.4.0-42-generic linux-image-5.4.0-42-generic linux-modules-5.4.0-42-generic linux-modules-extra-5.4.0-42-generic
+Для их удаления используйте «sudo apt autoremove».
+Будут установлены следующие дополнительные пакеты:
+  docker-ce-rootless-extras git git-man liberror-perl pigz slirp4netns
+Предлагаемые пакеты:
+  aufs-tools cgroupfs-mount | cgroup-lite git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk gitweb git-cvs git-mediawiki git-svn
+Следующие НОВЫЕ пакеты будут установлены:
+  containerd.io docker-ce docker-ce-cli docker-ce-rootless-extras git git-man liberror-perl pigz slirp4netns
+Обновлено 0 пакетов, установлено 9 новых пакетов, для удаления отмечено 0 пакетов, и 73 пакетов не обновлено.
+Необходимо скачать 109 MB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 488 MB.
+Хотите продолжить? [Д/н] y
+Пол:1 http://ru.archive.ubuntu.com/ubuntu focal/universe amd64 pigz amd64 2.4-1 [57,4 kB]
+Пол:2 https://download.docker.com/linux/ubuntu focal/stable amd64 containerd.io amd64 1.4.3-1 [28,1 MB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu focal/main amd64 liberror-perl all 0.17029-1 [26,5 kB]
+Пол:4 http://ru.archive.ubuntu.com/ubuntu focal/main amd64 git-man all 1:2.25.1-1ubuntu3 [884 kB]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu focal/main amd64 git amd64 1:2.25.1-1ubuntu3 [4 554 kB]
+Пол:6 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-ce-cli amd64 5:20.10.2~3-0~ubuntu-focal [41,4 MB]
+Пол:7 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-ce amd64 5:20.10.2~3-0~ubuntu-focal [24,8 MB]
+Пол:8 https://download.docker.com/linux/ubuntu focal/stable amd64 docker-ce-rootless-extras amd64 5:20.10.2~3-0~ubuntu-focal [8 907 kB]
+Пол:9 http://ru.archive.ubuntu.com/ubuntu focal/universe amd64 slirp4netns amd64 0.4.3-1 [74,3 kB]
+Получено 109 MB за 12с (9 380 kB/s)
+Выбор ранее не выбранного пакета pigz.
+(Чтение базы данных … на данный момент установлено 225600 файлов и каталогов.)
+Подготовка к распаковке …/0-pigz_2.4-1_amd64.deb …
+Распаковывается pigz (2.4-1) …
+Выбор ранее не выбранного пакета containerd.io.
+Подготовка к распаковке …/1-containerd.io_1.4.3-1_amd64.deb …
+Распаковывается containerd.io (1.4.3-1) …
+Выбор ранее не выбранного пакета docker-ce-cli.
+Подготовка к распаковке …/2-docker-ce-cli_5%3a20.10.2~3-0~ubuntu-focal_amd64.deb …
+Распаковывается docker-ce-cli (5:20.10.2~3-0~ubuntu-focal) …
+Выбор ранее не выбранного пакета docker-ce.
+Подготовка к распаковке …/3-docker-ce_5%3a20.10.2~3-0~ubuntu-focal_amd64.deb …
+Распаковывается docker-ce (5:20.10.2~3-0~ubuntu-focal) …
+Выбор ранее не выбранного пакета docker-ce-rootless-extras.
+Подготовка к распаковке …/4-docker-ce-rootless-extras_5%3a20.10.2~3-0~ubuntu-focal_amd64.deb …
+Распаковывается docker-ce-rootless-extras (5:20.10.2~3-0~ubuntu-focal) …
+Выбор ранее не выбранного пакета liberror-perl.
+Подготовка к распаковке …/5-liberror-perl_0.17029-1_all.deb …
+Распаковывается liberror-perl (0.17029-1) …
+Выбор ранее не выбранного пакета git-man.
+Подготовка к распаковке …/6-git-man_1%3a2.25.1-1ubuntu3_all.deb …
+Распаковывается git-man (1:2.25.1-1ubuntu3) …
+Выбор ранее не выбранного пакета git.
+Подготовка к распаковке …/7-git_1%3a2.25.1-1ubuntu3_amd64.deb …
+Распаковывается git (1:2.25.1-1ubuntu3) …
+Выбор ранее не выбранного пакета slirp4netns.
+Подготовка к распаковке …/8-slirp4netns_0.4.3-1_amd64.deb …
+Распаковывается slirp4netns (0.4.3-1) …
+Настраивается пакет slirp4netns (0.4.3-1) …
+Настраивается пакет liberror-perl (0.17029-1) …
+Настраивается пакет containerd.io (1.4.3-1) …
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+Настраивается пакет docker-ce-cli (5:20.10.2~3-0~ubuntu-focal) …
+Настраивается пакет pigz (2.4-1) …
+Настраивается пакет git-man (1:2.25.1-1ubuntu3) …
+Настраивается пакет docker-ce (5:20.10.2~3-0~ubuntu-focal) …
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
+Настраивается пакет git (1:2.25.1-1ubuntu3) …
+Настраивается пакет docker-ce-rootless-extras (5:20.10.2~3-0~ubuntu-focal) …
+Обрабатываются триггеры для man-db (2.9.1-1) …
+Обрабатываются триггеры для systemd (245.4-4ubuntu3.3) …
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ sudo docker run hello-world
+Unable to find image 'hello-world:latest' locally
+latest: Pulling from library/hello-world
+0e03bdcc26d7: Pull complete
+Digest: sha256:31b9c7d48790f0d8c50ab433d9c3b7e17666d6993084c002c2ff1ca09b96391d
+Status: Downloaded newer image for hello-world:latest
+
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+
+To generate this message, Docker took the following steps:
+ 1. The Docker client contacted the Docker daemon.
+ 2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+    (amd64)
+ 3. The Docker daemon created a new container from that image which runs the
+    executable that produces the output you are currently reading.
+ 4. The Docker daemon streamed that output to the Docker client, which sent it
+    to your terminal.
+
+To try something more ambitious, you can run an Ubuntu container with:
+ $ docker run -it ubuntu bash
+
+
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ sudo systemctl status docker
+● docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+
+version: '3'
+     Active: active (running) since Wed 2021-01-27 09:11:22 +04; 1min 8s ago
+
+version: '3'
+TriggeredBy: ● docker.socket
+
+services:
+       Docs: https://docs.docker.com
+   Main PID: 3887 (dockerd)
+      Tasks: 11
+     Memory: 64.1M
+     CGroup: /system.slice/docker.service
+             └─3887 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+янв 27 09:11:22 avn-virtual-machine dockerd[3887]: time="2021-01-27T09:11:22.611607846+04:00" level=warning msg="Your kernel does not support cgroup blkio weight"
+янв 27 09:11:22 avn-virtual-machine dockerd[3887]: time="2021-01-27T09:11:22.611694900+04:00" level=warning msg="Your kernel does not support cgroup blkio weight_device"
+янв 27 09:11:22 avn-virtual-machine dockerd[3887]: time="2021-01-27T09:11:22.611966636+04:00" level=info msg="Loading containers: start."
+янв 27 09:11:22 avn-virtual-machine dockerd[3887]: time="2021-01-27T09:11:22.751318111+04:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be >
+янв 27 09:11:22 avn-virtual-machine dockerd[3887]: time="2021-01-27T09:11:22.896067909+04:00" level=info msg="Loading containers: done."
+янв 27 09:11:22 avn-virtual-machine dockerd[3887]: time="2021-01-27T09:11:22.985460213+04:00" level=info msg="Docker daemon" commit=8891c58 graphdriver(s)=overlay2 version=20.10.2
+янв 27 09:11:22 avn-virtual-machine dockerd[3887]: time="2021-01-27T09:11:22.985724471+04:00" level=info msg="Daemon has completed initialization"
+янв 27 09:11:22 avn-virtual-machine systemd[1]: Started Docker Application Container Engine.
+янв 27 09:11:23 avn-virtual-machine dockerd[3887]: time="2021-01-27T09:11:23.014588040+04:00" level=info msg="API listen on /run/docker.sock"
+янв 27 09:11:48 avn-virtual-machine dockerd[3887]: time="2021-01-27T09:11:48.855787452+04:00" level=info msg="ignoring event" container=1444598fe42482420d54256066f8d8dac9f0ce5c0d37694a2400f1c0d5fc96e1 module=>
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ sudo usermod -aG docker ${USER}
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ echo "Install Wordpress"
+Install Wordpress
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$
+avn@avn-virtual-machine:~$ mkdir wordpress && cd wordpress
+avn@avn-virtual-machine:~/wordpress$
+avn@avn-virtual-machine:~/wordpress$
+avn@avn-virtual-machine:~/wordpress$ mkdir nginx-conf
+avn@avn-virtual-machine:~/wordpress$
+avn@avn-virtual-machine:~/wordpress$ vi nginx-conf/nginx.conf
+avn@avn-virtual-machine:~/wordpress$ vi .env
+avn@avn-virtual-machine:~/wordpress$
+avn@avn-virtual-machine:~/wordpress$ git init
+Инициализирован пустой репозиторий Git в /home/avn/wordpress/.git/
+avn@avn-virtual-machine:~/wordpress$ vi .gitignore
+avn@avn-virtual-machine:~/wordpress$ echo '.env' > .dockerignore
+avn@avn-virtual-machine:~/wordpress$ echo '.git' >> .dockerignore
+avn@avn-virtual-machine:~/wordpress$ echo 'docker-compose.yml' >> .dockerignore
+avn@avn-virtual-machine:~/wordpress$ echo '.dockerignore' >> .dockerignore
+avn@avn-virtual-machine:~/wordpress$
+avn@avn-virtual-machine:~/wordpress$ vi docker-compose.yml
+avn@avn-virtual-machine:~/wordpress$
+avn@avn-virtual-machine:~/wordpress$ sudo docker-compose up
+Building with native build. Learn about native build in Compose here: https://docs.docker.com/go/compose-native-build/
+Creating network "wordpress_app-network" with driver "bridge"
+Creating volume "wordpress_certbot-etc" with default driver
+Creating volume "wordpress_wordpress" with default driver
+Creating volume "wordpress_dbdata" with default driver
+Pulling db (mysql:8.0)...
+8.0: Pulling from library/mysql
+a076a628af6f: Pull complete
+f6c208f3f991: Pull complete
+88a9455a9165: Pull complete
+406c9b8427c6: Pull complete
+7c88599c0b25: Pull complete
+25b5c6debdaf: Pull complete
+43a5816f1617: Pull complete
+1a8c919e89bf: Pull complete
+9f3cf4bd1a07: Pull complete
+80539cea118d: Pull complete
+201b3cad54ce: Pull complete
+944ba37e1c06: Pull complete
+Digest: sha256:feada149cb8ff54eade1336da7c1d080c4a1c7ed82b5e320efb5beebed85ae8c
+Status: Downloaded newer image for mysql:8.0
+Pulling wordpress (wordpress:5.1.1-fpm-alpine)...
+5.1.1-fpm-alpine: Pulling from library/wordpress
+bdf0201b3a05: Pull complete
+ea6e561c50e0: Pull complete
+f581654c6ada: Pull complete
+f205a7399250: Pull complete
+be168a59f377: Pull complete
+073e30dbac02: Pull complete
+d94cea587efe: Pull complete
+6ed026e6424c: Pull complete
+695dbe186452: Pull complete
+79f0d83843fe: Pull complete
+f57cd0d319e8: Pull complete
+838d818ea958: Pull complete
+0f06001e8eff: Pull complete
+42b2e684670e: Pull complete
+e95bc5b9eb59: Pull complete
+537d24b2e974: Pull complete
+Digest: sha256:4d6db7f7b368d6ade40510f27ac6d16e2b690b49bbdb237435f1f21234d8436a
+Status: Downloaded newer image for wordpress:5.1.1-fpm-alpine
+Pulling webserver (nginx:1.15.12-alpine)...
+1.15.12-alpine: Pulling from library/nginx
+e7c96db7181b: Pull complete
+264026bbe255: Pull complete
+a71634c55d29: Pull complete
+5595887beb81: Pull complete
+Digest: sha256:57a226fb6ab6823027c0704a9346a890ffb0cacde06bc19bbc234c8720673555
+Status: Downloaded newer image for nginx:1.15.12-alpine
+Creating db ... done
+Creating wordpress ... done
+Creating webserver ... done
+Attaching to db, wordpress, webserver
+db           | 2021-01-27 05:37:34+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.23-1debian10 started.
+db           | 2021-01-27 05:37:34+00:00 [Note] [Entrypoint]: Switching to dedicated user 'mysql'
+db           | 2021-01-27 05:37:34+00:00 [Note] [Entrypoint]: Entrypoint script for MySQL Server 8.0.23-1debian10 started.
+db           | 2021-01-27 05:37:34+00:00 [Note] [Entrypoint]: Initializing database files
+db           | 2021-01-27T05:37:34.676907Z 0 [System] [MY-013169] [Server] /usr/sbin/mysqld (mysqld 8.0.23) initializing of server in progress as process 43
+db           | 2021-01-27T05:37:34.682743Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+db           | 2021-01-27T05:37:35.446109Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+wordpress    | WordPress not found in /var/www/html - copying now...
+wordpress    | Complete! WordPress has been successfully copied to /var/www/html
+wordpress    | [27-Jan-2021 05:37:36 UTC] PHP Warning:  mysqli::__construct(): (HY000/2002): Connection refused in Standard input code on line 22
+wordpress    |
+wordpress    | MySQL Connection Error: (2002) Connection refused
+db           | 2021-01-27T05:37:36.465624Z 6 [Warning] [MY-010453] [Server] root@localhost is created with an empty password ! Please consider switching off the --initialize-insecure option.
+db           | 2021-01-27 05:37:38+00:00 [Note] [Entrypoint]: Database files initialized
+db           | 2021-01-27 05:37:38+00:00 [Note] [Entrypoint]: Starting temporary server
+db           | 2021-01-27T05:37:38.734475Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.23) starting as process 88
+db           | 2021-01-27T05:37:38.765845Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+db           | 2021-01-27T05:37:38.993310Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+wordpress    |
+wordpress    | MySQL Connection Error: (2002) Connection refused
+db           | 2021-01-27T05:37:39.113789Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Socket: /var/run/mysqld/mysqlx.sock
+db           | 2021-01-27T05:37:39.223284Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+db           | 2021-01-27T05:37:39.223422Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+db           | 2021-01-27T05:37:39.224953Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+db           | 2021-01-27T05:37:39.244917Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.23'  socket: '/var/run/mysqld/mysqld.sock'  port: 0  MySQL Community Server - GPL.
+db           | 2021-01-27 05:37:39+00:00 [Note] [Entrypoint]: Temporary server started.
+db           | Warning: Unable to load '/usr/share/zoneinfo/iso3166.tab' as time zone. Skipping it.
+db           | Warning: Unable to load '/usr/share/zoneinfo/leap-seconds.list' as time zone. Skipping it.
+db           | Warning: Unable to load '/usr/share/zoneinfo/zone.tab' as time zone. Skipping it.
+db           | Warning: Unable to load '/usr/share/zoneinfo/zone1970.tab' as time zone. Skipping it.
+db           | 2021-01-27 05:37:40+00:00 [Note] [Entrypoint]: Creating database wordpress
+db           | 2021-01-27 05:37:40+00:00 [Note] [Entrypoint]: Creating user user
+db           | 2021-01-27 05:37:41+00:00 [Note] [Entrypoint]: Giving user user access to schema wordpress
+db           |
+db           | 2021-01-27 05:37:41+00:00 [Note] [Entrypoint]: Stopping temporary server
+db           | 2021-01-27T05:37:41.034423Z 13 [System] [MY-013172] [Server] Received SHUTDOWN from user root. Shutting down mysqld (Version: 8.0.23).
+db           | 2021-01-27T05:37:41.692546Z 0 [System] [MY-010910] [Server] /usr/sbin/mysqld: Shutdown complete (mysqld 8.0.23)  MySQL Community Server - GPL.
+db           | 2021-01-27 05:37:42+00:00 [Note] [Entrypoint]: Temporary server stopped
+db           |
+db           | 2021-01-27 05:37:42+00:00 [Note] [Entrypoint]: MySQL init process done. Ready for start up.
+db           |
+wordpress    |
+wordpress    | MySQL Connection Error: (2002) Connection refused
+db           | 2021-01-27T05:37:42.270651Z 0 [System] [MY-010116] [Server] /usr/sbin/mysqld (mysqld 8.0.23) starting as process 1
+db           | 2021-01-27T05:37:42.277571Z 1 [System] [MY-013576] [InnoDB] InnoDB initialization has started.
+db           | 2021-01-27T05:37:42.410251Z 1 [System] [MY-013577] [InnoDB] InnoDB initialization has ended.
+db           | 2021-01-27T05:37:42.501059Z 0 [System] [MY-011323] [Server] X Plugin ready for connections. Bind-address: '::' port: 33060, socket: /var/run/mysqld/mysqlx.sock
+db           | 2021-01-27T05:37:42.560979Z 0 [Warning] [MY-010068] [Server] CA certificate ca.pem is self signed.
+db           | 2021-01-27T05:37:42.561179Z 0 [System] [MY-013602] [Server] Channel mysql_main configured to support TLS. Encrypted connections are now supported for this channel.
+db           | 2021-01-27T05:37:42.563439Z 0 [Warning] [MY-011810] [Server] Insecure configuration for --pid-file: Location '/var/run/mysqld' in the path is accessible to all OS users. Consider choosing a different directory.
+db           | 2021-01-27T05:37:42.580421Z 0 [System] [MY-010931] [Server] /usr/sbin/mysqld: ready for connections. Version: '8.0.23'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server - GPL.
+wordpress    | [27-Jan-2021 05:37:45] NOTICE: fpm is running, pid 1
+wordpress    | [27-Jan-2021 05:37:45] NOTICE: ready to handle connections
+wordpress    | 172.18.0.4 -  27/Jan/2021:05:40:31 +0000 "GET /index.php" 302
+webserver    | 192.168.231.1 - - [27/Jan/2021:05:40:31 +0000] "GET / HTTP/1.1" 302 5 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0" "-"
+wordpress    | 172.18.0.4 -  27/Jan/2021:05:40:31 +0000 "GET /wp-admin/install.php" 200
+webserver    | 192.168.231.1 - - [27/Jan/2021:05:40:33 +0000] "GET /wp-admin/install.php HTTP/1.1" 200 11960 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0" "-"
+webserver    | 192.168.231.1 - - [27/Jan/2021:05:40:33 +0000] "GET /wp-includes/css/buttons.min.css?ver=5.1.1 HTTP/1.1" 200 6134 "http://192.168.231.128/wp-admin/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0" "-"
+webserver    | 192.168.231.1 - - [27/Jan/2021:05:40:33 +0000] "GET /wp-admin/css/install.min.css?ver=5.1.1 HTTP/1.1" 200 5840 "http://192.168.231.128/wp-admin/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0" "-"
+webserver    | 192.168.231.1 - - [27/Jan/2021:05:40:33 +0000] "GET /wp-includes/css/dashicons.min.css?ver=5.1.1 HTTP/1.1" 200 46358 "http://192.168.231.128/wp-admin/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0" "-"
+webserver    | 192.168.231.1 - - [27/Jan/2021:05:40:33 +0000] "GET /wp-includes/js/jquery/jquery.js?ver=1.12.4 HTTP/1.1" 200 97183 "http://192.168.231.128/wp-admin/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0" "-"
+webserver    | 192.168.231.1 - - [27/Jan/2021:05:40:33 +0000] "GET /wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1 HTTP/1.1" 200 10056 "http://192.168.231.128/wp-admin/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0" "-"
+webserver    | 192.168.231.1 - - [27/Jan/2021:05:40:33 +0000] "GET /wp-admin/js/language-chooser.min.js?ver=5.1.1 HTTP/1.1" 200 374 "http://192.168.231.128/wp-admin/install.php" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0" "-"
+webserver    | 192.168.231.1 - - [27/Jan/2021:05:40:33 +0000] "GET /wp-admin/images/wordpress-logo.svg?ver=20131107 HTTP/1.1" 200 1521 "http://192.168.231.128/wp-admin/css/install.min.css?ver=5.1.1" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0" "-"
+webserver    | 192.168.231.1 - - [27/Jan/2021:05:40:33 +0000] "GET /wp-admin/images/spinner.gif HTTP/1.1" 200 3656 "http://192.168.231.128/wp-admin/css/install.min.css?ver=5.1.1" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:84.0) Gecko/20100101 Firefox/84.0" "-"
+^CGracefully stopping... (press Ctrl+C again to force)
+Stopping webserver ... done
+Stopping wordpress ... done
+Stopping db        ... done
+avn@avn-virtual-machine:~/wordpress$
+avn@avn-virtual-machine:~/wordpress$
+avn@avn-virtual-machine:~/wordpress$
+avn@avn-virtual-machine:~/wordpress$
+avn@avn-virtual-machine:~/wordpress$ sudo docker-compose up -d
+Building with native build. Learn about native build in Compose here: https://docs.docker.com/go/compose-native-build/
+Starting db ... done
+Starting wordpress ... done
+Starting webserver ... done
+avn@avn-virtual-machine:~/wordpress$
+avn@avn-virtual-machine:~/wordpress$
+avn@avn-virtual-machine:~/wordpress$ sudo docker-compose ps
+  Name                 Command               State          Ports
+------------------------------------------------------------------------
+db          docker-entrypoint.sh --def ...   Up      3306/tcp, 33060/tcp
+webserver   nginx -g daemon off;             Up      0.0.0.0:80->80/tcp
+wordpress   docker-entrypoint.sh php-fpm     Up      9000/tcp
+avn@avn-virtual-machine:~/wordpress$

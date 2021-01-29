@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<script>
+		"use strict";
+
+		// Эти задания на инкремент.
+		// Если используется форма записи x++ (postfix), то число увеличивается, но возвращается число ДО инкремента
+        // Если используется форма записи ++x (prefix), то число увеличивается, и возвращается число ПОСЛЕ инкремента
+        //пример 1
+        let a = 1, b = 1, c, d;
+        c = ++a;   // a = a + 1 = 2; c = a = 2
+        alert(c); // ответ: 2
+        //пример 2
+        d = b++; // d = b = 1; b = b + 1 = 2
+        alert(d); //ответ: 1
+        //пример 3
+        c = 2 + ++a; // a = a + 1 = 3; c = 2 + 3 = 5
+        alert(c); //ответ: 5
+        //пример 4
+        d = 2 + b++; // d = 2 + 2 = 4; b = b + 1 = 2 + 1 = 3
+        alert(d); //ответ: 4
+        alert(a); //3
+        alert(b); //3
+
+		// -----------------------------------------------------------------
+
+		a = 2;
+        let x = 1 + (a *= 2); // a = a * 2 = 2 * 2 = 4; x = 1 + a = 1 + 4 = 5
+		// a = 4
+		// x = 5
+
+		// -----------------------------------------------------------------
+
+		a = -5;
+		b = -10;
+
+		if (a >= 0 && b >= 0) {
+		    alert(a - b);
+		} else if (a < 0 && b < 0) {
+            alert(a * b);
+        } else {
+			alert(a + b);
+		}
+
+        // -----------------------------------------------------------------
+
+		function sum(a = 0, b = 0) {
+		    return +a + +b;
+		}
+
+        function sub(a = 0, b = 0) {
+            return +a - +b;
+        }
+
+        function mul(a = 0, b = 0) {
+            return +a * +b;
+        }
+
+        function div(a = 0, b = 0) {
+            return +a / +b;
+        }
+
+        // -----------------------------------------------------------------
+
+		function mathOperation(arg1, arg2, operation) {
+		    let result = 0;
+		    switch (operation) {
+		        case 'sum':
+		            result = sum(arg1, arg2);
+		            break;
+		        case 'sub':
+                    result = sub(arg1, arg2);
+                    break;
+                case 'mul':
+                    result = mul(arg1, arg2);
+                    break;
+                case 'div':
+                    result = div(arg1, arg2);
+                    break;
+                default:
+				    throw new Error("Invalid operation");
+		    }
+			return result;
+		}
+
+        // -----------------------------------------------------------------
+        let input = String(prompt("Введите количество денег, которые вы хотите положить в банк: "));
+		let rubles = '';
+		if (input.length > 1 && input.charAt(input.length-2) === '1') {
+		   // для чисел от 11 до 19 особые правила
+			rubles = 'рублей';
+		} else {
+		    switch (input.charAt(input.length-1)) {
+		        case '1':
+                    rubles = 'рубль';
+                    break;
+		        case '2':
+                case '3':
+                case '4':
+	                rubles = 'рубля';
+	                break;
+			    default:
+			        rubles = 'рублей';
+            }
+		}
+		alert(`Ваша сумма в ${input} ${rubles}  успешно внесена на счет.`);
+	</script>
+</body>
+</html>
