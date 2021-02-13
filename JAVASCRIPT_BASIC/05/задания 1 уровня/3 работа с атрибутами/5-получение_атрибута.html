@@ -16,7 +16,11 @@
     и aria-label с помощью метода getAttribute. -->
 
     <script>
-        
+        "use strict";
+
+        let button = document.querySelector('button');
+        console.log(button.attributes.getNamedItem('data-dismiss'));
+        console.log(button.attributes.getNamedItem('aria-label'));
     </script>
 </body>
 

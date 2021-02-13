@@ -29,6 +29,12 @@
     и выведите их в консоль. -->
 
     <script>
+        "use strict";
+
+        let elements = document.querySelectorAll('.card-link');
+        elements.forEach((element) => {
+            element.parentNode.className === 'card-body' ? console.log(element) : '';
+        });
 
     </script>
 </body>

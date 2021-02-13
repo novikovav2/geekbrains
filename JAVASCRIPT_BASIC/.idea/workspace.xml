@@ -2,14 +2,101 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da8deb9-b8ba-44f2-a9fb-98d017cdaa80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/JAVASCRIPT_BASIC.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/01/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PROFESSIONAL_LAYOUT/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PROFESSIONAL_LAYOUT/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05/05.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 1 уровня/1-замена_картинок/images.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 1 уровня/1-замена_картинок/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 1 уровня/1-замена_картинок/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 1 уровня/2-стили.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 1 уровня/3-карточки_товаров/cards.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 1 уровня/3-карточки_товаров/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 1 уровня/3-карточки_товаров/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 1 уровня/4-отложенный_вызов.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 1 уровня/5-добавить_отступы.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 1 уровня/6-добавить_переносы.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 2 уровня/1-получение_значений_из_input/inputs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 2 уровня/2-анимация/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 2 уровня/2-анимация/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 2 уровня/3-рейтинг/rating.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 3 уровня/1-удаление_блока_по_клику/messages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 3 уровня/2-добавление_в_корзину/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 3 уровня/2-добавление_в_корзину/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 3 уровня/2-добавление_в_корзину/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 3 уровня/2-добавление_в_корзину/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 3 уровня/2-добавление_в_корзину/toCart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 3 уровня/3-валидация_формы/validation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 3 уровня/4-кнопка_наверх/goToTop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 3 уровня/4-кнопка_наверх/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 3 уровня/5-имитация_загрузки_картинок/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 3 уровня/5-имитация_загрузки_картинок/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 3 уровня/5-имитация_загрузки_картинок/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 3 уровня/5-имитация_загрузки_картинок/images/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 3 уровня/5-имитация_загрузки_картинок/load.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06/задания 3 уровня/5-имитация_загрузки_картинок/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/1 уровень/1-перебор_свойств_объекта.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/1 уровень/2-очистка_с_помощью_innerHTML.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/1 уровень/3-заполнение_с_конкатенацией.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/1 уровень/4-вставка_разметки.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/2 уровень/1-получение_data-атрибутов.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/2 уровень/2-создание_разметки.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/2 уровень/3-размер_шрифта.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/3 уровень/1-tabs/1-tabs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/3 уровень/1-tabs/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/3 уровень/1-tabs/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/3 уровень/2-сообщение/message.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/3 уровень/2-сообщение/notification.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/3 уровень/2-сообщение/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/4 уровень/1 вывод товаров/1-вывод_товаров.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/4 уровень/1 вывод товаров/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/4 уровень/1 вывод товаров/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/4 уровень/2 прогрессбар/progress.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07/4 уровень/2 прогрессбар/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08/1 текст вместо картинки/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08/1 текст вместо картинки/card.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08/1 текст вместо картинки/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08/2 подгрузка постов/код/load.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08/2 подгрузка постов/код/load.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08/2 подгрузка постов/код/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08/2 подгрузка постов/прочитай меня.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08/3 шахматная доска/chess.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08/3 шахматная доска/scripts/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08/3 шахматная доска/scripts/positions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08/3 шахматная доска/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/1 поиск элементов на странице/1-поиск_по_id.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/1 поиск элементов на странице/1-поиск_по_id.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/1 поиск элементов на странице/2-поиск_по_имени_класса.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/1 поиск элементов на странице/2-поиск_по_имени_класса.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/1 поиск элементов на странице/3-поиск_всех_элементов_по_селектору.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/1 поиск элементов на странице/3-поиск_всех_элементов_по_селектору.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/1 поиск элементов на странице/4-поиск_одного_элемента_по_селектору.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/1 поиск элементов на странице/4-поиск_одного_элемента_по_селектору.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/1 поиск элементов на странице/5-название_вкладки.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/1 поиск элементов на странице/5-название_вкладки.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/2 класс node/1-получение_родительского_узла.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/2 класс node/1-получение_родительского_узла.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/2 класс node/2-добавление_элемента_с_appendChild.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/2 класс node/2-добавление_элемента_с_appendChild.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/2 класс node/3-удаление_узлов.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/2 класс node/3-удаление_узлов.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/2 класс node/4-замена_текста_в_элементе.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/2 класс node/4-замена_текста_в_элементе.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/3 работа с атрибутами/1-добавление_классов.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/3 работа с атрибутами/1-добавление_классов.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/3 работа с атрибутами/2-toggle.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/3 работа с атрибутами/2-toggle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/3 работа с атрибутами/3-удаление_классов.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/3 работа с атрибутами/3-удаление_классов.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/3 работа с атрибутами/4-удобная_вставка.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/3 работа с атрибутами/4-удобная_вставка.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/3 работа с атрибутами/5-получение_атрибута.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/3 работа с атрибутами/5-получение_атрибута.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/3 работа с атрибутами/6-создание_атрибута.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/3 работа с атрибутами/6-создание_атрибута.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/3 работа с атрибутами/7-замена_id.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/3 работа с атрибутами/7-замена_id.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/4 обработка событий/1-событие_загрузки.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/4 обработка событий/1-событие_загрузки.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/4 обработка событий/2-событие_загрузки.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/4 обработка событий/2-событие_загрузки.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/4 обработка событий/3-событие_мыши.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/4 обработка событий/3-событие_мыши.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 1 уровня/4 обработка событий/4-событие_мыши.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 1 уровня/4 обработка событий/4-событие_мыши.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/1-вывод_картинок_в_консоль.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/1-вывод_картинок_в_консоль.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/2-вывод_имени_тега.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/2-вывод_имени_тега.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/3-вывод_имени_класса.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/3-вывод_имени_класса.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/4-вывод_всех_классов.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/4-вывод_всех_классов.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/5-проверка_наличия_класса.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/5-проверка_наличия_класса.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/6-удаление_классов.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/6-удаление_классов.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/7-добавление_текста.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/7-добавление_текста.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/8-добавление_классов.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/8-добавление_классов.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/9-переключение_классов.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 2 уровня/1 получение элементов и свойств/9-переключение_классов.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 2 уровня/2 обработка события/1-получение_свойств.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 2 уровня/2 обработка события/1-получение_свойств.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 2 уровня/2 обработка события/2-получение_всех_классов.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 2 уровня/2 обработка события/2-получение_всех_классов.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 2 уровня/2 обработка события/3-получение_произвольных_атрибутов.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 2 уровня/2 обработка события/3-получение_произвольных_атрибутов.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 2 уровня/2 обработка события/4-изменение_разметки.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 2 уровня/2 обработка события/4-изменение_разметки.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 2 уровня/2 обработка события/5-всплытие_события.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 2 уровня/2 обработка события/5-всплытие_события.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05/задания 2 уровня/3 стили/1-inline_стили.html" beforeDir="false" afterPath="$PROJECT_DIR$/05/задания 2 уровня/3 стили/1-inline_стили.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +170,11 @@
       <workItem from="1611373043306" duration="13000" />
       <workItem from="1611373596720" duration="2577000" />
       <workItem from="1611564846164" duration="20303000" />
+      <workItem from="1611940725256" duration="51000" />
+      <workItem from="1611940814798" duration="11767000" />
+      <workItem from="1612254642218" duration="13386000" />
+      <workItem from="1612458440278" duration="11544000" />
+      <workItem from="1612679343709" duration="12554000" />
     </task>
     <servers />
   </component>

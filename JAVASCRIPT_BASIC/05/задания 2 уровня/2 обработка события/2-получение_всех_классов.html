@@ -18,5 +18,14 @@
     3. Переберите с помощью forEach event.target.classList и выведите каждый класс
     в консоль.
     -->
+
+    <script>
+        "use strict";
+
+        document.querySelector('p').addEventListener('click', function (event) {
+            console.log(event.target.classList);
+            event.target.classList.forEach((cls) => console.log(cls));
+        })
+    </script>
 </body>
 </html>
